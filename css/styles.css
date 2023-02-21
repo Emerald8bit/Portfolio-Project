@@ -1,0 +1,358 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+}
+
+/* Nav Bar */
+
+nav {
+    width: 100%;
+    background-color: #4f2b2b;
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99;
+}
+
+nav2 {
+    width: 100%;
+    background-color: transparent;
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99;
+}
+
+.links a.active {
+    border-bottom:2px solid #A58F53;
+    padding-bottom:2px;
+}
+
+.links_two a.active {
+    border-bottom:2px solid #A58F53;
+    padding-bottom:2px;
+}
+
+.nav_bar {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    margin-left: -75%;
+    color: #A58F53;
+}
+
+.logo h3 {
+    margin: 0 auto;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: Franklin_Gothic_Demi;
+}
+
+.links {
+    margin-right: -75%;
+}
+
+.links_two {
+    margin-right: -80%;
+}
+
+.links a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: #A58F53;
+    text-transform: lowercase;
+    font-family: Franklin_Gothic_Demi;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.links_two a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: #A58F53;
+    text-transform: lowercase;
+    font-family: Franklin_Gothic_Demi;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:1400px) {
+    .logo {
+        margin-left: -55%;
+    }
+    .links {
+        margin-right: -55%;
+    }
+    .links_two {
+        margin-right: -65%;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .logo {
+        margin-left: -35%;
+    }
+    .links {
+        margin-right: -35%;
+    }
+    .links_two {
+        margin-right: -50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo {
+        margin-left: 0%;
+    }
+    .links {
+        margin-right: 0%;
+    }
+    .links_two {
+        margin-right: -15%;
+    }
+}
+
+/* Hero */
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(99, 57, 57, .07),
+        rgba(99, 57, 57, .07)
+    ),
+    url("../images/liam_headshots-61.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nametext {
+    height: 30%;
+    width: 40%;
+    position: relative;
+    top: 69%;
+    margin-left: 2%;
+}
+
+.name {
+    height: 50%;
+    width: 100%;
+    font-size: 130px;
+    letter-spacing: 1px;
+    color: #FFF9B3;
+    font-family: Haettenschweiler;
+}
+
+.description {
+    height: 10%;
+    width: 100%;
+    font-size: 33px;
+    letter-spacing: 1.5px;
+    color: #FFF9B3;
+    font-family: Haettenschweiler;
+    position: relative;
+    top: 15%;
+}
+
+/* Background */
+
+.background {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #633939;
+}
+
+.boxone {
+    width: 30%;
+    height: 50%;
+    position: relative;
+    border-bottom: 10px solid #A58F53;
+    border-right: 10px solid #A58F53;
+    box-shadow: 1px 1px 3px;
+}
+
+.boxtwo {
+    width: 30%;
+    height: 50%;
+    position: relative;
+    left: 70%;
+    border-left: 10px solid #A58F53;
+    border-top: 10px solid #A58F53;
+    box-shadow: 1px 1px 5px;
+}
+
+/* Info Box */
+
+.infoboxone {
+    background-color: #5C2323;
+    height: 40%;
+    width: 70%;
+    margin-left: 14.5%;
+    box-shadow: 1px 1px 7px;
+    position: relative;
+    top: -66%;
+    display: flex;
+    align-items: center;
+}
+
+.infoboxtwo {
+    background-color: #5C2323;
+    height: 40%;
+    width: 70%;
+    margin-left: 14.5%;
+    box-shadow: 1px 1px 7px;
+    position: relative;
+    top: -66%;
+    display: flex;
+    align-items: center;
+}
+
+.infoboxtwotitle {
+    height: 40%;
+    width: 70%;
+    margin-left: 14.5%;
+    position: relative;
+    top: -70%;
+    display: flex;
+    align-items: center;
+}
+
+.infoboxthree {
+    background-color: #5C2323;
+    height: 40%;
+    width: 70%;
+    margin-left: 14.5%;
+    box-shadow: 1px 1px 7px;
+    position: relative;
+    top: -66%;
+    display: flex;
+    align-items: center;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 60px;
+    border: 5px solid #A58F53;
+}
+
+.headshot img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutme {
+    width: 63%;
+    height: 100%;
+    padding-left: 30px;
+    position: relative;
+    top: 55px;
+}
+
+.aboutme p {
+    color: #A58F53;
+    font-family: Haettenschweiler;
+    font-size: 55px;
+    letter-spacing: 2px;
+    position: relative;
+    top: -32px;
+}
+
+.aboutme h4 {
+    color: #A58F53;
+    font-family: Franklin_Gothic_Demi;
+    position: relative;
+    top: -42px;
+}
+
+.contactinfo p {
+    color: #A58F53;
+    font-family: Haettenschweiler;
+    font-size: 55px;
+    letter-spacing: 2px;
+    position: relative;
+    top: -35px;
+    left: 310px;
+    border-bottom: 5px solid #A58F53;
+}
+
+.contactinfo h4 {
+    color: #A58F53;
+    font-family: Franklin_Gothic_Demi;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    top: -20px;
+    left: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.infoboxtwotitle p {
+    color: #A58F53;
+    font-family: Haettenschweiler;
+    font-size: 50px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #A58F53;
+    padding-bottom: 3px;
+    position: relative;
+    right: 310px;
+}
+
+.gamedesignpic {
+    height: 150px;
+    width: 600px;
+    position: relative;
+    left: 13%;
+}
+
+.gamedesignpic img {
+    height: 100%;
+    width: 100%;
+}
+
+.gamedesignpictwo {
+    height: 150px;
+    width: 600px;
+    position: relative;
+    left: 25%;
+}
+
+.gamedesignpictwo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Franklin_Gothic_Demi;
+    src: url(../fonts/Franklin\ Gothic\ Demi\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Haettenschweiler;
+    src: url(../fonts/Haettenschweiler\ Regular.ttf);
+}
